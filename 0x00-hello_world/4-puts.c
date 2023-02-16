@@ -1,12 +1,14 @@
 #include<stdio.h>
 
 /**
- * main - is the entry point
- *
- * This program output some text
- *
- * Always returns 0 means success
+ * main - Entry point of the program
+ * 
+ * Description: A C program that prints with put function
+ * 
+ * Return: Always 0 (Success)
  */
+
+
 
 
 int main(void)
