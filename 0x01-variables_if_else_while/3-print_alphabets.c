@@ -13,12 +13,12 @@ int main(void)
 {
 	int n, ch = 97;
 
-	for (n = 0 ; n <= 50; n++)
+	for (n = 0 ; n <= 51; n++)
 	{
 
 		putchar(ch);
 		++ch;
-		if (ch == 122)
+		if (ch == 123)
 			ch = 65;
 
 	}
