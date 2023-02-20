@@ -6,7 +6,7 @@
  * Description: print text using write() function
  *
  * Return: Error(1)
- * 
+ *
 */
 
 int main(void)
