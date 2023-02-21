@@ -18,18 +18,16 @@ void times_table(void)
 			if ((multi / 10))
 				_putchar((multi / 10) + '0');
 			_putchar((multi % 10) + '0');
-			if (k !=9)
+			if (k != 9)
 			{
 				_putchar(',');
 				_putchar(' ');
-	
-			
 
-				if ((multi / 10))
+				if (!(multi / 10))
 				{
 					_putchar(' ');
 				}
-			}	
+			}
 		}
 
 		_putchar('\n');
