@@ -1,0 +1,1 @@
+insted loops and functions
