@@ -26,7 +26,9 @@ void times_table(void)
 			
 
 				if ((multi / 10))
+				{
 					_putchar(' ');
+				}
 			}	
 		}
 
