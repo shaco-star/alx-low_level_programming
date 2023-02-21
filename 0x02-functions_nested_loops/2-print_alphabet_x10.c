@@ -1,7 +1,7 @@
 #include"main.h"
 
 /**
- * print_alphabet - Function return alphabet char
+ * print_alphabet_x10 - Function return alphabet char 10 times
  *
  * Description: print alphabet from a to z in lowercase
  * 10 times
@@ -11,7 +11,7 @@
 
 
 
-void print_alphabet(void)
+void print_alphabet_x10(void)
 {
 	int line, i;
 
