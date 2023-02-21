@@ -11,7 +11,6 @@ void times_table(void)
 
 	for (i = 0; i <= 9; i++)
 	{
-		multi = 0;
 
 		for (k = 0; k <= 9; k++)
 		{
