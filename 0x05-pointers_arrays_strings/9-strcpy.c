@@ -1,4 +1,4 @@
-#include"main.py"
+#include"main.h"
 
 /**
  * _strcpy - copy string to another varibale
