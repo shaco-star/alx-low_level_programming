@@ -24,6 +24,9 @@ void rev_string(char *s)
 		temp = *end;
 		*end = *start;
 		*start = temp;
+
+		start++;
+		end--;
 	}
 	_putchar('\n');
 }
