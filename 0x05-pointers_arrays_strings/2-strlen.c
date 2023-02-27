@@ -8,7 +8,7 @@
  * Return: length
 */
 
-void _strlen(int *s)
+void _strlen(char *s)
 {
 	int len;
 
