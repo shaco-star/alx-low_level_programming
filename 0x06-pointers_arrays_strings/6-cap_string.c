@@ -1,14 +1,14 @@
 #include"main.h"
 
 /**
- * string_toupper - change lower case to uppercase
+ * cap_string - Capitalizes words
  *
  * @s: string that will be changed
  *
  * Return: char
 */
 
-char *string_toupper(char *s)
+char *cap_string(char *s)
 {
 	int i;
 
