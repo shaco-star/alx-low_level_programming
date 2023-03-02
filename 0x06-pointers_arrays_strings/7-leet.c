@@ -11,7 +11,7 @@
 char *leet(char *s)
 {
 	int c = 0, i;
-	int upper[] = {97, 101, 111, 116, 108};
+	char upper[] = {'A', 'E', 'O', 'T', 'L'};
 	int lower[] = {65, 69, 79, 84, 76};
 	int n[] = {52, 51, 48, 55, 49};
 
