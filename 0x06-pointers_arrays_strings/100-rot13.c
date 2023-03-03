@@ -31,7 +31,7 @@ char *rot13(char *s)
 		c++;
 	}
 
-	
+
 
 	return (s);
 }
