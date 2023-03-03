@@ -19,9 +19,9 @@ char *rot13(char *s)
 
 		while (alpha[i] != '\0')
 		{
-			if (s[c] == alpha[i])
+			if (s[c] = alpha[i])
 			{
-				s[c] == root13[i];
+				s[c] = root13[i];
 				break;
 			}
 			i++;
