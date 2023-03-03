@@ -10,19 +10,24 @@
 
 char *rot13(char *s)
 {
-	int c = 0;
+	int c = 0, i;
+	char alpha[] = {"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"};
+	char root13[] = {"NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm"};
 
 	while (s[c] != '\0')
 	{
-		if ((s[c] >= 'a' && s[c] <= 'm') || (s[c] >= 'A' && s[c] <= 'M'))
-		{
-			s[c] += 13;
 
-		}
-		else if ((s[c] >= 'n' && s[c] <= 'z') || (s[c] >= 'N' && s[c] <= 'Z'))
+		while (alpha[i] != '\0')
 		{
-			s[c] -= 13;
+			if (s[c] == alpha[i])
+			{
+				s[c] == root13[i];
+				break;
+			}
+			i++;
 		}
+
+	}
 
 		c++;
 	}
