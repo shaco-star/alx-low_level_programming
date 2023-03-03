@@ -16,10 +16,11 @@ char *rot13(char *s)
 
 	while (s[c] != '\0')
 	{
+		i = 0;
 
 		while (alpha[i] != '\0')
 		{
-			if (s[c] = alpha[i])
+			if (s[c] == alpha[i])
 			{
 				s[c] = root13[i];
 				break;
@@ -27,10 +28,10 @@ char *rot13(char *s)
 			i++;
 		}
 
-	}
-
 		c++;
 	}
+
+	
 
 	return (s);
 }
