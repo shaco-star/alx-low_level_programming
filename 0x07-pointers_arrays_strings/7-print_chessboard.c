@@ -21,7 +21,7 @@ void print_chessboard(char (*a)[8])
 			_putchar('\n');
 		}
 		_putchar(a[r / 8][r - c]);
-		i++;
+		r++;
 	}
 	_putchar('\n');
 }
