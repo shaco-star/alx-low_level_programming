@@ -1,7 +1,7 @@
 #include"main.h"
 
 /**
- * s_prime_number - checks if a number is prime or not recursively
+ * is_prime_number - checks if a number is prime or not recursively
  * @n: input integer
  *
  * Return: 1 if n is prime, otherwise 0.
