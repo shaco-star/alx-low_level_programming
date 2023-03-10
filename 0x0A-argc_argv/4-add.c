@@ -30,7 +30,7 @@ int main(int argc, char *argv[])
 		{
 			if (!isdigit(*p))
 			{
-				printf("Error");
+				printf("Error\n");
 				return (1);
 			}
 			p++;
