@@ -16,12 +16,12 @@ char *str_concat(char *s1, char *s2)
 
 	len1 = 0;
 	len2 = 0;
-	
+
 	for (i = 0; s1[i] != '\0' || s2[i] != '\0'; i++)
 	{
-		if (s1[i] !='\0')
+		if (s1[i] != '\0')
 			len1++;
-		if (s2[i] !='\0')
+		if (s2[i] != '\0')
 			len2++;
 	}
 
