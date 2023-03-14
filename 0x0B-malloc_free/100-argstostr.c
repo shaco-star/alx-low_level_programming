@@ -6,18 +6,19 @@ int _strlen(char *s);
  *
  * @ac: lenght of arguments
  * @av: array of arguments
+ * Return: pointer
 */
 
 char *argstostr(int ac, char **av)
 {
-	int i, j ,k = 0 ,len = 0;
+	int i, j, k = 0, len = 0;
 	char *arr;
 
 	if (ac == 0 || av == NULL)
 		return (NULL);
 
 	for (i = 0; i < ac; i++)
-		len += _strlen(av[i]);
+		len += _strlen(av[i]) + 1;
 
 
 	arr = malloc(sizeof(char) * len);
