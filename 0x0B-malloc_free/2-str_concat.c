@@ -12,23 +12,20 @@
 char *str_concat(char *s1, char *s2)
 {
 	char *s;
-	int i, j, len1, len2;
+	int i, j, len1 = 0, len2 = 0;
 
 	if (s1 == NULL)
 		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
 
-	len1 = len2 = 0;
-	for (i = 0; s1[i] != '\0' || s2[i] != '\0'; i++)
-	{
-		if (s1[i] != '\0')
-			len1++;
-		if (s2[i] != '\0')
-			len2++;
-	}
+	for (i = 0; s1[i] != '\0'; i++)
+		len1++;
 
-	s = (char *)malloc(sizeof(char) * (len1 + len2 - 1));
+	for (i = 0; s2[i] != '\0'; i++)
+		len2++;
+
+	s = (char *)malloc(sizeof(char) * (len1 + len2 - 3));
 	if (s == NULL)
 		return (NULL);
 	for (i = 0; s1[i] != '\0'; i++)
