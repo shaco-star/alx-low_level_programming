@@ -1,5 +1,5 @@
-#include <stdio.h>
-
+#ifndef DOG
+#define DOG
 /**
  * struct dog - dog struct
  *
