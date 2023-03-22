@@ -1,7 +1,7 @@
 #include "3-calc.h"
 #include <stdio.h>
 #include <string.h>
-#include <stlib.h>
+#include <stdlib.h>
 
 /**
  * main - program entry
@@ -12,7 +12,7 @@
  * Return: 0 success
 */
 
-int main(int argc, char **argv)
+int main(int argc, char *argv[])
 {
 	int n1, n2;
 	char *op;
@@ -23,8 +23,8 @@ int main(int argc, char **argv)
 		exit(98);
 	}
 
+	op = argv[2];
 	n1 = atoi(argv[1]);
-	op = atoi(argv[2]);
 	n2 = atoi(argv[3]);
 
 	if (get_op_func(op) == NULL || op[1] != '\0')
@@ -32,7 +32,7 @@ int main(int argc, char **argv)
 		printf("Error\n");
 		exit(99);
 	}
-	if ((*op == "/" || op == "%") && n2 == 0)
+	if ((*op == 47 || *op == 37) && n2 == 0)
 	{
 		printf("Error\n");
 		exit(100);
