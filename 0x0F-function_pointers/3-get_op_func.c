@@ -14,11 +14,12 @@ int (*get_op_func(char *s))(int, int)
 	int i = 0;
 
 	op_t ops[] = {
-		{'+', op_add},
-		{'+', op_add},
-		{'+', op_add},
-		{'+', op_add},
-		{'+', op_add},
+		{"+", op_add},
+		{"-", op_add},
+		{"*", op_add},
+		{"/", op_add},
+		{"%", op_add},
+		{NULL, NULL}
 	};
 
 	while (i < 5)
