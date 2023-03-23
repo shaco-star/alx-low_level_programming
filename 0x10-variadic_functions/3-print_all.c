@@ -33,7 +33,7 @@ void print_all(const char * const format, ...)
 				flag = 0;
 				break;
 			case 's':
-				str = va_arg(args, char *);
+				str = va_arg(args, char*);
 				if (str)
 					printf("%s", str);
 				else
