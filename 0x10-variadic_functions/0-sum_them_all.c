@@ -1,8 +1,8 @@
 #include "variadic_functions.h"
-#include <stdrag.h>
+#include <stdarg.h>
 
 /**
- * sun_them_all - sum of numbers
+ * sum_them_all - sum of numbers
  *
  * @n: number of parameters
  *
@@ -12,13 +12,15 @@
 int sum_them_all(const unsigned int n, ...)
 {
 	unsigned int sum, i;
+	va_list numPtr;
 
 	sum = 0;
-	va_list numPtr;
 	va_start(numPtr, n);
 
-	for (i = 0; i < n;i++)
+	for (i = 0; i < n; i++)
 		sum += va_arg(numPtr, int);
 
 	va_end(numPtr);
+
+	return (sum);
 }
