@@ -4,6 +4,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/**
+ * struct listint_s - linked list
+ *
+ * @n: int
+ * @next: point to next node
+*/
+
 typedef struct listint_s
 {
 	int n;
