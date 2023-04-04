@@ -4,7 +4,6 @@
  * sum_listint - return nth node of linked list
  *
  * @head: head of node
- * @index: index of node we want
  *
  * Return: return node at @index
 */
