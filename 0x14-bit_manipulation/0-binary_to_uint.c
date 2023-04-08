@@ -45,7 +45,7 @@ unsigned int binary_to_uint(const char *b)
 	{
 		rem = n % 10;
 		n /= 10;
-		dec += rem * (1 << i);
+		dec += rem * pow(2,i);
 		++i;
 	}
 	return (dec);
