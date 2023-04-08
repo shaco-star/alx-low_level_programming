@@ -11,7 +11,7 @@
 
 
 
-unsigned int str_to_int(char *str)
+unsigned int str_to_int(const char *str)
 {
 	int result = 0, i;
 
