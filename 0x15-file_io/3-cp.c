@@ -67,6 +67,12 @@ int main(int argc, char **argv)
 			_error(99, argv[2], 0);
 		}
 	}
+	if (bytes_read == -1)
+	{
+		close(file_from);
+		close(file_to);
+		_error(98, argv[1], 0);
+	}
 	if (close(file_from) == -1)
 	{
 		close(file_to);
