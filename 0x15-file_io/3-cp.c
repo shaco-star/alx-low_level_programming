@@ -67,7 +67,7 @@ int main(int argc, char **argv)
 			_error(99, argv[2], 0);
 		}
 	}
-	if (bytes_read == -1)
+	if (n_read == -1)
 	{
 		close(file_from);
 		close(file_to);
