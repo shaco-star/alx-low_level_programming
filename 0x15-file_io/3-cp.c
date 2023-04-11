@@ -12,7 +12,7 @@
 
 void _error(int exit_code, char *file, int fd)
 {
-	switch (exit)
+	switch (exit_code)
 	{
 		case 97:
 			dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
@@ -27,7 +27,7 @@ void _error(int exit_code, char *file, int fd)
 			dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
 			break;
 	}
-	exit(exit_code)
+	exit(exit_code);
 }
 
 
