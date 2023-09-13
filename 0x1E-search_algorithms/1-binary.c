@@ -1,56 +1,31 @@
 #include "search_algos.h"
 
 /**
- * print_array - print array.
+ * binary_search - searches for a value in an array using binary search
  *
- * @array: array that we will print
- * @start: start index of array
- * @end: end index of array
- *
- * Return: none
-*/
-
-void print_array(int *array, size_t start, size_t end)
-{
-	size_t i;
-
-	printf("Searching in array: ");
-	for (i = start; i < end; i++)
-	{
-		printf("%d ", array[i]);
-	}
-	printf("\n");
-}
-
-/**
- * binary_search - search array using binary search algo
- *
- * @array: pointer to array
+ * @array: input array
  * @size: size of the array
- * @value: value that we are searching for
+ * @value: value to search for
  *
- * Return: return index of searched value, -1 otherwise
-*/
-
+ * Return: index of the number, -1 otherwise
+ */
 int binary_search(int *array, size_t size, int value)
 {
-	size_t start = 0;
-	size_t end = size;
-	size_t mid;
+	size_t half, i;
 
-	if (array == NULL)
-		return  (-1);
-	while (start < end)
-	{
-		print_array(array, start, end);
-		mid = start + (end - start) / 2;
+	if (array == NULL || size == 0)
+		return (-1);
+	printf("Searching in array:");
 
-		if (array[mid] == value)
-			return (mid);
-		else if (array[mid] < value)
-			start = mid + 1;
-		else
-			end = mid;
-	}
-	return (-1);
+	for (i = 0; i < size; i++)
+		printf(" %d%s", array[i], (i == size - 1) ? "\n" : ",");
+	half = (size - 1) / 2;
+	if (value == array[half])
+		return ((int)half);
+
+	if (value < array[half])
+		return (binary_search(array, half, value));
+	i = binary_search(array + half + 1, size - half - 1, value);
+
+	return ((i == -1) ? -1 : ((int)half + i + 1));
 }
